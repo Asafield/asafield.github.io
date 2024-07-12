@@ -5,14 +5,14 @@ heroText: Asafield's blog
 tagline: 嵌入式学习博客,雄关漫道真如铁, 而今迈步从头越。
 # actionText: 立刻进入 →
 # actionLink: /web/
-# bannerBg: auto # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
+bannerBg: '/img/wall.png' # auto => 网格纹背景(有bodyBgImg时无背景)，默认 | none => 无 | '大图地址' | background: 自定义背景样式       提示：如发现文本颜色不适应你的背景时可以到palette.styl修改$bannerTextColor变量
 
-features: # 可选的
-  - title: linux
-    details: u-boot, linux驱动学习
-    link: /linux/ # 可选
-    imgUrl: /img/linux-tux.svg # 可选
-
+# features: # 可选的
+#   - title: linux
+#     details: u-boot, linux驱动学习
+#     link: /linux/ # 可选
+#     imgUrl: /img/linux-tux.svg # 可选
+#
 # 文章列表显示方式: detailed 默认，显示详细版文章列表（包括作者、分类、标签、摘要、分页等）| simple => 显示简约版文章列表（仅标题和日期）| none 不显示文章列表
 # postList: detailed
 # simplePostListLength: 10 # 简约版文章列表显示的文章数量，默认10。（仅在postList设置为simple时生效）
@@ -71,8 +71,8 @@ features: # 可选的
 
 ## :email: 联系
 
-- **WeChat or QQ**: <a href="tencent://message/?uin=894072666&Site=&Menu=yesUrl" class='qq'>894072666</a>
-- **Email**: <a href="mailto:894072666@qq.com">894072666@qq.com</a>
-- **GitHub**: <https://github.com/xugaoyi>
+- **WeChat or QQ**: <a href="tencent://message/?uin=xxx&Site=&Menu=yesUrl" class='qq'>xxx</a>
+- **Email**: <a href="mailto:asafield@qq.com">asafield@qq.com</a>
+- **GitHub**: <https://github.com/Asafield>
 
 </br>  -->

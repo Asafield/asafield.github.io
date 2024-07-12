@@ -35,20 +35,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
-            text: '智慧餐厅机器人',
-            items: [
-              { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
-            ],
+            text: '智慧餐厅机器人(竞赛)',
+            link: '/pages/8143cc480faf9a11/',
           },
-          ],
+        ],
       },
       {
         text: '技术笔记',
         link: '/notes/',
-        // items: [
-        //   { text: '学习记录', link: '/pages/9a7ee40fc232253e/' },
+         items: [
+           { text: '学习记录', link: '/categories/?category=zk' },
         //   { text: '个人博客', link: '/pages/4c778760be26d8b3/' },
-        // ],
+         ],
       },
       {
         text: '更多',
@@ -80,7 +78,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    repo: 'Asafield/blog', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 开启更新时间，并配置前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -285,26 +283,26 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-    [
-      'vuepress-plugin-comment', // 评论
-      {
-        choosen: 'gitalk',
-        options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'blog-gitalk-comment', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
-          pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-          labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-          body:
-            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-        },
-      },
-    ],
+    // [
+    //   'vuepress-plugin-comment', // 评论
+    //   {
+    //     choosen: 'gitalk',
+    //     options: {
+    //       clientID: 'a6e1355287947096b88b',
+    //       clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+    //       repo: 'blog-gitalk-comment', // GitHub 仓库
+    //       owner: 'Asafield', // GitHub仓库所有者
+    //       admin: ['Asafield'], // 对仓库有写权限的人
+    //       // distractionFreeMode: true,
+    //       pagerDirection: 'last', // 'first'正序 | 'last'倒序
+    //       id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+    //       title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+    //       labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+    //       body:
+    //         '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+    //     },
+    //   },
+    // ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {
