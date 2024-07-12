@@ -138,7 +138,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
     social: {
-      // iconfontCssFile: '//at.alicdn.com/t/xxx.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
+      iconfontCssFile: '//at.alicdn.com/t/c/font_4619559_xdt7iuenmn.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自己添加。阿里图片库：https://www.iconfont.cn/
       icons: [
         {
           iconClass: 'icon-youjian',
@@ -151,7 +151,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           link: 'https://github.com/Asafield',
         },
         {
-          iconClass: 'icon-erji',
+          iconClass: 'icon-game',
           title: 'van game',
           link: 'https://steamcommunity.com/profiles/76561198850599067/',
         },
@@ -162,7 +162,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     footer: {
       createYear: 2024, // 博客创建年份
       copyrightInfo:
-        'Asafield | <a href="">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+        'Asafield | <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> CC BY-NC 4.0 </a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
